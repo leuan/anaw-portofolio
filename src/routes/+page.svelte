@@ -1,59 +1,57 @@
 <script lang="ts">
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcomeFallback from '$lib/images/svelte-welcome.png';
+	import Icon from '@iconify/svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Ana Voicu's Portofolio" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
+	<div class="flex h-dvh flex-col justify-between bg-black">
+		<div
+			class="mt-6 flex w-dvw items-center justify-center gap-4 self-end leading-4 text-secondary-800"
+		>
+			<Icon icon="line-md:phone" width="50" height="50" />
+			<Icon icon="line-md:email" width="55" height="55" />
+			<Icon icon="line-md:instagram" width="50" height="50" />
+			<Icon icon="line-md:linkedin" width="45" height="45" />
+		</div>
+		<div class="flex flex-col items-center justify-center">
+			<p
+				class="font-display h-36 bg-gradient-to-b from-primary-900 via-secondary-600 via-40% to-primary-900 bg-clip-text text-center text-8xl font-bold text-transparent"
+			>
+				hi! I'm Ana and
+			</p>
+			<p
+				class="font-display h-36 overflow-visible bg-gradient-to-b from-primary-900 via-secondary-600 via-40% to-primary-900 bg-clip-text text-center text-8xl font-bold text-transparent"
+			>
+				this is my portofolio.
+			</p>
+		</div>
 
-		to your new<br />SvelteKit app
-	</h1>
+		<div
+			class="font-body flex w-dvw justify-around gap-5 self-end bg-secondary-700 px-5 py-3 text-2xl font-semibold lowercase text-black sticky bottom-0"
+		>
+			<!-- <a href="#">Home</a> -->
+			<a href="#">Videography</a>
+			<a href="#">Articles</a>
+			<a href="#">About me</a>
+		</div>
+	</div>
+</section>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+<section>
+	<div class="h-dvh bg-accent-800">
+		<p>Test</p>
+	</div>
+</section>
 
-	<Counter />
+<section>
+	<div class="h-dvh bg-primary-300">
+		<p>Test</p>
+	</div>
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
