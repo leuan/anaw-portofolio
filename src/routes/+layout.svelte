@@ -14,4 +14,7 @@
 </div>
 
 <style>
+    :global(body) {
+        @apply font-body;
+    }
 </style>
