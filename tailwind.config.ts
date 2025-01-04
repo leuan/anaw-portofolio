@@ -76,8 +76,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				display: ['EB Garamond', 'ui-serif'],
-				body: ['Faculty Glyphic', 'ui-serif']
+				inconsolata: ['Inconsolata', 'ui-serif'],
+				playfair: ['Playfair Display', 'ui-serif'],
+				stix: ['STIX Two Text', 'ui-serif'],
 			}
 		}
 	},
