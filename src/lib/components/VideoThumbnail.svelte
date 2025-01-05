@@ -1,16 +1,22 @@
 <script lang="ts">
 	import { onDestroy } from 'svelte';
+	import { goto } from '$app/navigation';
+	import Icon from '@iconify/svelte';
 
 	export let images: string | string[] = '';
 	export let name = '';
+	export let pageId;
 	let currentIndex = 0;
 
 	// Change the image every 3 seconds
-	const interval = setInterval(() => {
-		if (typeof images !== 'string') {
-			currentIndex = (currentIndex + 1) % images.length;
-		}
-	}, Math.random() * 1000 + 2000 );
+	const interval = setInterval(
+		() => {
+			if (typeof images !== 'string') {
+				currentIndex = (currentIndex + 1) % images.length;
+			}
+		},
+		Math.random() * 1000 + 2000
+	);
 
 	// Cleanup interval on component destroy
 	onDestroy(() => {
@@ -18,20 +24,34 @@
 	});
 </script>
 
-<div class="slideshow w-full aspect-video">
-	{#if typeof(images) === "string"}
-	   <img src={images} alt={name} class="hover:blur-md"/>
+<button
+	onclick={() => {
+		goto(`/videos?id=${pageId}`);
+	}}
+	class="slideshow aspect-video w-full md:w-1/2"
+>
+	{#if typeof images === 'string'}
+		<img src={images} alt={name} class="hover:blur-md" />
 	{:else}
-		<img src={images[currentIndex]} alt={name} class="hover:blur-md"/>
+		<img src={images[currentIndex]} alt={name} class="hover:blur-md" />
 	{/if}
 	<div
-		class="hover-text font-playfair flex justify-center items-center text-3xl font-bold text-white md:text-5xl lg:text-8xl"
+		class="hover-text flex flex-col items-center justify-around font-playfair text-3xl font-bold text-secondary-700 md:text-5xl lg:text-8xl"
 	>
-		<p class="drop-shadow-xl text-center">
+		<p class="mt-20 text-center drop-shadow-xl">
 			{name}
 		</p>
+		
+		<span class="flex items-center text-secondary-900 gap-2">
+			<p class="font-inconsolata text-sm font-normal uppercase">Click to watch</p>
+			<Icon
+				icon="mynaui:click-solid"
+				width="24"
+				height="24"
+			/>
+		</span>
 	</div>
-</div>
+</button>
 
 <style>
 	.slideshow {

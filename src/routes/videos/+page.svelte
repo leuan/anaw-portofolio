@@ -1,10 +1,12 @@
 <script>
+// @ts-nocheck
+
 	import { page } from '$app/state';
 	import { VideoData } from '$lib/videoData';
 	import Icon from '@iconify/svelte';
 	import Youtube from 'svelte-youtube-embed';
+	import { goto, preloadData } from '$app/navigation';
 
-	let exists = true;
 	let videoID = $state(Number(page.url.searchParams.get('id')));
 	let video = {
 		name: '',
@@ -15,10 +17,10 @@
 	};
 
 	let slicedName = $state(['', '']);
+	//TODO redirect to 404 if invalid
 
 	$effect(() => {
 		if (videoID && videoID < 0 && videoID >= VideoData.length) {
-			exists = false;
 			return;
 		}
 		video = VideoData[videoID];
@@ -43,7 +45,14 @@
 			></div>
 		</div>
 		<div class="min-h-screen bg-black p-4 pb-20">
-			<button class="flex items-center font-inconsolata text-xl font-bold text-white">
+			<button
+				onclick={() => {
+					goto('/');
+				}}
+				onmouseover={async () => await preloadData('/')}
+				onfocus={async () => await preloadData('/')}
+				class="mb-2 flex items-center font-inconsolata text-xl font-bold text-white"
+			>
 				<Icon icon="material-symbols-light:arrow-back-2-rounded" width="20" height="20" />
 				<span> BACK </span>
 			</button>
@@ -51,11 +60,18 @@
 				<div class="max-w-screen-xl grow">
 					<Youtube
 						id={video.link}
-						altThumb={true}
+						<!-- altThumb={true} -->
 						--title-color={'#FFF'}
 						--title-shadow-color="{'#D6CEFD'}200"
-						--title-font-family={'Playfair Display'}
-					/>
+						--title-font-family="Playfair Display"
+					>
+						<img
+							slot="thumbnail"
+							alt="A Youtube video"
+							src={video.images[0]}
+							style="width: 100%; height: 100%; object-fit: contain; object-position: center; background: black"
+						/>
+					</Youtube>
 				</div>
 			</div>
 			<div class="mt-4 flex flex-col items-center gap-4">
@@ -66,11 +82,20 @@
 				</h2>
 				<p class="max-w-screen-lg text-justify text-white">{video.synopsis}</p>
 				<h2
-					class="w-full border-b-2 border-t-2 border-secondary-700 px-2 pb-1 text-3xl font-bold text-secondary-700" 
+					class="w-full border-b-2 border-t-2 border-secondary-700 px-2 pb-1 text-3xl font-bold text-secondary-700"
 				>
 					In the Making
 				</h2>
 				<p class="max-w-screen-lg text-justify text-white">{video.contribution}</p>
+
+				<h2
+					class="w-full border-b-2 border-t-2 border-secondary-700 px-2 pb-1 text-3xl font-bold text-secondary-700"
+				>
+					Stills
+				</h2>
+				{#each video.images.slice(1) as url}
+					<img src={url} alt="Still from the movie" />
+				{/each}
 			</div>
 		</div>
 	</main>

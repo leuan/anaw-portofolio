@@ -2,20 +2,83 @@ export const VideoData = [
 	{
 		name: 'The Last Luke',
 		synopsis:
-			'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur excepturi aliquid distinctio eligendi, quia corrupti quidem doloremque nisi magnam ratione officia enim aliquam recusandae. Sit enim cumque in exercitationem laborum. Quas, minus deserunt quaerat dolorem mollitia ea doloribus quae animi, enim reprehenderit ab vitae debitis quod facilis possimus provident voluptas. Labore odit, autem officiis consequatur expedita debitis tempora asperiores hic. Omnis neque dignissimos quaerat, deleniti delectus quidem alias fuga ipsa eum blanditiis, eius dolorem iste doloremque eveniet. Maiores ex eligendi voluptatem quisquam quaerat minima magni veniam! Fugiat possimus magnam placeat. Possimus labore consequatur placeat enim, voluptatem quam similique unde quos iste maiores omnis nemo aliquid assumenda nostrum magnam veniam fugiat dolores totam officiis perspiciatis eum praesentium. Consequuntur tempore alias est. Inventore natus vel magnam in quod laudantium ratione nulla quidem tempore! Voluptatem quae aut, necessitatibus maiores consequuntur voluptatibus laboriosam sed, velit, neque nulla ratione iure voluptates nam hic molestiae culpa. Vitae voluptatum quis sapiente aperiam magni aliquam nihil? Explicabo ducimus ratione praesentium. Consequatur praesentium iure magni aliquid sit reiciendis, sint officiis iste! Dicta sequi labore commodi explicabo obcaecati nulla doloribus. Omnis qui consequatur a sint numquam perspiciatis distinctio possimus ab consequuntur atque inventore at, aliquam quos sapiente repellat vero harum aperiam, natus commodi provident? Quasi quaerat labore culpa temporibus ipsam? Doloremque ullam odio, a aliquid ab consequuntur tempore qui quibusdam ut suscipit aliquam. Mollitia facere animi fugiat rem natus repellat, omnis officia aliquid quod recusandae reprehenderit possimus doloribus ducimus ab! Nulla dolorem, temporibus neque quibusdam vel obcaecati accusamus earum deleniti beatae nam ab similique provident. Adipisci accusamus repellat debitis enim non, omnis cupiditate consectetur id maxime ab repellendus illum tempore. Provident illum sint, consequatur aut nisi culpa nam sunt optio? Ad ducimus exercitationem, nulla cum quae harum, sit nam perspiciatis error voluptas aspernatur, laborum eius optio voluptatem rerum incidunt nobis!',
+			'In a future ruled by AI, Luke is one of the last humans, spared only because his art embodies emotions that machines can’t replicate. But as technology advances, even his creative work faces extinction, threatening to erase the final traces of human passion from the world.',
 		link: '-Qt9i-vAPW8',
 		images: [
-			'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv084ksxUc5GQhCvOXh2ECSKEnII6YalORoY4ZXpBPK_CHrvuJMEdIo2MVxBqPG7rIOoaphuul5etpRYL9VyJT8w',
-			'https://assets-au-01.kc-usercontent.com/ab37095e-a9cb-025f-8a0d-c6d89400e446/17d49270-1b2a-4511-80a8-1c5dbd41e8c8/article-cat-vet-visit-guide.jpg'
+			'/images/videography/the-last-luke/0.png',
+			'/images/videography/the-last-luke/1.png',
+			'/images/videography/the-last-luke/2.png',
+			'/images/videography/the-last-luke/3.png',
+			'/images/videography/the-last-luke/4.png',
+			'/images/videography/the-last-luke/5.png',
+			'/images/videography/the-last-luke/6.png',
+			'/images/videography/the-last-luke/7.png',
+			'/images/videography/the-last-luke/8.png'
 		],
 		contribution:
-			'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur excepturi aliquid distinctio eligendi, quia corrupti quidem doloremque nisi magnam ratione officia enim aliquam recusandae. Sit enim cumque in exercitationem laborum. Quas, minus deserunt quaerat dolorem mollitia ea doloribus quae animi, enim reprehenderit ab vitae debitis quod facilis possimus provident voluptas. Labore odit, autem officiis consequatur expedita debitis tempora asperiores hic. Omnis neque dignissimos quaerat, deleniti delectus quidem alias fuga ipsa eum blanditiis, eius dolorem iste doloremque eveniet. Maiores ex eligendi voluptatem quisquam quaerat minima magni veniam! Fugiat possimus magnam placeat. Possimus labore consequatur placeat enim, voluptatem quam similique unde quos iste maiores omnis nemo aliquid assumenda nostrum magnam veniam fugiat dolores totam officiis perspiciatis eum praesentium. Consequuntur tempore alias est. Inventore natus vel magnam in quod laudantium ratione nulla quidem tempore! Voluptatem quae aut, necessitatibus maiores consequuntur voluptatibus laboriosam sed, velit, neque nulla ratione iure voluptates nam hic molestiae culpa. Vitae voluptatum quis sapiente aperiam magni aliquam nihil? Explicabo ducimus ratione praesentium. Consequatur praesentium iure magni aliquid sit reiciendis, sint officiis iste! Dicta sequi labore commodi explicabo obcaecati nulla doloribus. Omnis qui consequatur a sint numquam perspiciatis distinctio possimus ab consequuntur atque inventore at, aliquam quos sapiente repellat vero harum aperiam, natus commodi provident? Quasi quaerat labore culpa temporibus ipsam? Doloremque ullam odio, a aliquid ab consequuntur tempore qui quibusdam ut suscipit aliquam. Mollitia facere animi fugiat rem natus repellat, omnis officia aliquid quod recusandae reprehenderit possimus doloribus ducimus ab! Nulla dolorem, temporibus neque quibusdam vel obcaecati accusamus earum deleniti beatae nam ab similique provident. Adipisci accusamus repellat debitis enim non, omnis cupiditate consectetur id maxime ab repellendus illum tempore. Provident illum sint, consequatur aut nisi culpa nam sunt optio? Ad ducimus exercitationem, nulla cum quae harum, sit nam perspiciatis error voluptas aspernatur, laborum eius optio voluptatem rerum incidunt nobis!'
+			'The Last Luke is the most recent project for which I contributed on the producer position. The film delves into the power and expansion of AI and how it may affect the artistic fields, especially music-making in a possible future. As a part of my tasks, I collaborated with the director in the process of casting, location scouting, poster-making, and organizational aspects such as organizing call sheets and assuring everyone’s reliability.'
 	},
 	{
-		name: '',
-		synopsis: '',
-		link: '',
-		images: [''],
-		contribution: ''
+		name: 'Pilot Panic',
+		synopsis:
+			'Pilot Panic is the talk show where the newest and freshly aired TV series are discussed. ',
+		link: 'br7B3LQrDEc',
+		images: [
+			'/images/videography/pilot-panic/0.png',
+			'/images/videography/pilot-panic/1.png',
+			'/images/videography/pilot-panic/2.png',
+			'/images/videography/pilot-panic/3.png',
+			'/images/videography/pilot-panic/4.png',
+			'/images/videography/pilot-panic/5.png',
+			'/images/videography/pilot-panic/6.png',
+			'/images/videography/pilot-panic/7.png',
+			'/images/videography/pilot-panic/8.png',
+			'/images/videography/pilot-panic/9.png'
+		],
+		contribution:
+			'Pilot Panic was a livestreamed talk show on YouTube and was a special project to me as it was different than anything I worked on before. I was one of the main cameramen and worked in an in-door studio for the first time, which gave me a better view at how the television broadcasting and traditional media work.'
+	},
+	{
+		name: 'The Ick Factor',
+		synopsis:
+			'The Ick Factor follows three strangers - Max, Sarah, and Alex - who recently entered adulthood and struggle with their dating life in Amsterdam. They meet under unexpected circumstances in a bar without knowing their lives are about to change…',
+		link: '36DETZnwRv4',
+		images: [
+			'/images/videography/the-ick-factor/0.png',
+			'/images/videography/the-ick-factor/1.png',
+			'/images/videography/the-ick-factor/2.png',
+			'/images/videography/the-ick-factor/3.png',
+			'/images/videography/the-ick-factor/4.png',
+			'/images/videography/the-ick-factor/5.png',
+			'/images/videography/the-ick-factor/6.png',
+			'/images/videography/the-ick-factor/7.png',
+		],
+		contribution:
+			'The Ick Factor was the pilot episode I directed which follows the template of a sitcom. I tried to emphasize on the local issues and struggles young adults in their early 20s go through when they first leave their home country. The team and I tried to explore several topics that students our age encounter and create the same feeling of comfort that sitcoms offer to their audiences.'
+	},
+	{
+		name: 'Mirage',
+		synopsis:
+			'Young Ella feels conflicted as her therapy session set up by her mother forces her to take on reality. Having her happy place disturbed, Ella takes drastic measures to return her peace.',
+		link: 'W8YJt-b1Dvk',
+		images: [
+			'/images/videography/mirage/0.png',
+			'/images/videography/mirage/1.png',
+			'/images/videography/mirage/2.png',
+			'/images/videography/mirage/3.png',
+			'/images/videography/mirage/4.png',
+			'/images/videography/mirage/5.png',
+			'/images/videography/mirage/6.png',
+			'/images/videography/mirage/7.png',
+			'/images/videography/mirage/8.png',
+			'/images/videography/mirage/9.png',
+			'/images/videography/mirage/10.png',
+			'/images/videography/mirage/11.png',
+			'/images/videography/mirage/12.png',
+			'/images/videography/mirage/13.png',
+			'/images/videography/mirage/14.png',
+		],
+		contribution:
+			'Mirage is a project created by my friends and I on which we delve on topics of mental health and dissociation. I worked closely with the director in the pre-production phase where I had to find locations suitable for the filmmaker’s vision and organize call sheets for the team and shooting days. Besides the operational part of the production, I worked on set under the Costume and Set Design department where I created the actors’ outfits and look as well as provided the set with the needed props and layouts. '
 	}
 ];
