@@ -1,6 +1,6 @@
 <script>
-// @ts-nocheck
-
+	// @ts-nocheck
+	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
 	import { page } from '$app/state';
 	import { VideoData } from '$lib/videoData';
 	import Icon from '@iconify/svelte';
@@ -57,14 +57,11 @@
 				<span> BACK </span>
 			</button>
 			<div class="flex w-full justify-center">
-				<div class="max-w-screen-xl grow">
-					<Youtube
-						id={video.link}
-						<!-- altThumb={true} -->
+				<div class="max-w-screen-xl grow uppercase font-bold">
+					<Youtube id={video.link} 
+					    altThumb={true}
 						--title-color={'#FFF'}
-						--title-shadow-color="{'#D6CEFD'}200"
-						--title-font-family="Playfair Display"
-					>
+						--title-shadow-color="{'#D6CEFD'}200" --title-font-family="Inconsolata" >
 						<img
 							slot="thumbnail"
 							alt="A Youtube video"
@@ -74,28 +71,26 @@
 					</Youtube>
 				</div>
 			</div>
-			<div class="mt-4 flex flex-col items-center gap-4">
+			<div class="mt-4 flex flex-col items-center gap-2">
 				<h2
-					class="w-full border-b-2 border-t-2 border-secondary-700 px-2 pb-1 text-3xl font-bold text-secondary-700"
+					class="w-full max-w-screen-xl border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
 				>
-					Synopsis
+				    synopsis
 				</h2>
-				<p class="max-w-screen-lg text-justify text-white">{video.synopsis}</p>
+				<p class="w-full max-w-screen-xl text-justify text-white mb-8">{video.synopsis}</p>
 				<h2
-					class="w-full border-b-2 border-t-2 border-secondary-700 px-2 pb-1 text-3xl font-bold text-secondary-700"
+					class="w-full max-w-screen-xl border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
 				>
-					In the Making
+					in the making
 				</h2>
-				<p class="max-w-screen-lg text-justify text-white">{video.contribution}</p>
+				<p class="max-w-screen-xl text-justify text-white mb-8">{video.contribution}</p>
 
 				<h2
-					class="w-full border-b-2 border-t-2 border-secondary-700 px-2 pb-1 text-3xl font-bold text-secondary-700"
+					class="w-full max-w-screen-xl border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
 				>
-					Stills
+					stills
 				</h2>
-				{#each video.images.slice(1) as url}
-					<img src={url} alt="Still from the movie" />
-				{/each}
+				<ImageCarousel images={video.images.slice(1)} />
 			</div>
 		</div>
 	</main>

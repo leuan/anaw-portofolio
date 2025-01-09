@@ -33,7 +33,6 @@ export const VideoData = [
 			'/images/videography/pilot-panic/6.png',
 			'/images/videography/pilot-panic/7.png',
 			'/images/videography/pilot-panic/8.png',
-			'/images/videography/pilot-panic/9.png'
 		],
 		contribution:
 			'Pilot Panic was a livestreamed talk show on YouTube and was a special project to me as it was different than anything I worked on before. I was one of the main cameramen and worked in an in-door studio for the first time, which gave me a better view at how the television broadcasting and traditional media work.'
