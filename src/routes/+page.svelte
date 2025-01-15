@@ -1,8 +1,8 @@
 <script lang="ts">
-	import FilmBackground from '$lib/FilmBackground.svelte';
 	import AboutSection from '$lib/AboutSection.svelte'
 	import Icon from '@iconify/svelte';
 	import VideographySection from '$lib/VideographySection.svelte';
+	import PaperSection from '$lib/PaperSection.svelte';
 
 	const scrollToElement = (href: string) => {
 		const element = document.querySelector(href);
@@ -91,11 +91,7 @@
 
 <VideographySection/>
 
-<section
-	id="articles"
-	class="min-h-screen snap-start scroll-m-11 bg-primary-300 p-10 md:scroll-m-14"
->
-</section>
+<PaperSection/>
 
 <AboutSection/>
 

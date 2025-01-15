@@ -1,6 +1,6 @@
 <script lang="js">
 	import VideoThumbnail from './components/VideoThumbnail.svelte';
-	import { VideoData } from './videoData';
+	import { VideoData } from './data/videoData';
 	
 
 </script>
@@ -14,13 +14,5 @@
 </section>
 
 <style>
-    .stripes-dark {
-      background: repeating-linear-gradient(
-        45deg, /* Diagonal direction */
-        #fff, /* Start color */
-        #fff 20px, /* End of the first stripe */
-        #000 10px, /* Start of the second stripe */
-        #000 40px /* End of the second stripe */
-      );
-    }
+    
 </style>

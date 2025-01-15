@@ -79,6 +79,7 @@ export default {
 				inconsolata: ['Inconsolata', 'ui-serif'],
 				playfair: ['Playfair Display', 'ui-serif'],
 				stix: ['STIX Two Text', 'ui-serif'],
+				typewriter: ['Special Elite', 'ui-serif']
 			}
 		}
 	},

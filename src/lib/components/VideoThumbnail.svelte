@@ -31,9 +31,9 @@
 	class="slideshow aspect-video w-full md:w-1/2"
 >
 	{#if typeof images === 'string'}
-		<img src={images} alt={name} class="hover:blur-md" />
+		<img src={images} alt={name} class="hover:blur-md" loading="lazy" />
 	{:else}
-		<img src={images[currentIndex]} alt={name} class="hover:blur-md" />
+		<img src={images[currentIndex]} alt={name} class="hover:blur-md" loading="lazy" />
 	{/if}
 	<div
 		class="hover-text flex flex-col items-center justify-around font-playfair text-3xl font-bold text-secondary-700 md:text-5xl lg:text-8xl"

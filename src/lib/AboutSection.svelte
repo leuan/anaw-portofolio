@@ -10,7 +10,7 @@
 
 	<div class="flex flex-wrap justify-center">
 		<img src="/images/profile_pic.png" alt="Ana's profile" class="w-full p-4 lg:w-5/12 aspect-square h-fit" />
-		<div class="w-full md:w-3/4 p-4 lg:w-6/12 flex flex-col gap-4">
+		<div class="w-full max-w-prose p-4 lg:w-6/12 flex flex-col gap-4">
 			<p class="text-justify">
 				I am currently studying Media and Culture at the University of Amsterdam. Whether shaping
 				narratives on screen or delving into visual theories, my degree taught me how to create

@@ -2,3 +2,23 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import '@fontsource/fira-mono';
+
+.stripes-dark {
+	background: repeating-linear-gradient(
+		45deg,
+		/* Diagonal direction */ #fff,
+		/* Start color */ #fff 20px,
+		/* End of the first stripe */ #000 10px,
+		/* Start of the second stripe */ #000 40px /* End of the second stripe */
+	);
+}
+
+.stripes {
+	background: repeating-linear-gradient(
+		-45deg,
+		/* Diagonal direction */ #fff,
+		/* Start color */ #fff 20px,
+		/* End of the first stripe */ #000 10px,
+		/* Start of the second stripe */ #000 40px /* End of the second stripe */
+	);
+}

@@ -2,7 +2,7 @@
 	// @ts-nocheck
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
 	import { page } from '$app/state';
-	import { VideoData } from '$lib/videoData';
+	import { VideoData } from '$lib/data/videoData';
 	import Icon from '@iconify/svelte';
 	import Youtube from 'svelte-youtube-embed';
 	import { goto, preloadData } from '$app/navigation';
@@ -73,20 +73,20 @@
 			</div>
 			<div class="mt-4 flex flex-col items-center gap-2">
 				<h2
-					class="w-full max-w-screen-xl border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
+					class="w-full text-center border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
 				>
 				    synopsis
 				</h2>
-				<p class="w-full max-w-screen-xl text-justify text-white mb-8">{video.synopsis}</p>
+				<p class="w-full max-w-prose text-justify text-white mb-8">{video.synopsis}</p>
 				<h2
-					class="w-full max-w-screen-xl border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
+					class="w-full text-center border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
 				>
 					in the making
 				</h2>
-				<p class="max-w-screen-xl text-justify text-white mb-8">{video.contribution}</p>
+				<p class="max-w-prose text-justify text-white mb-8">{video.contribution}</p>
 
 				<h2
-					class="w-full max-w-screen-xl border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
+					class="w-full text-center border-secondary-900 text-4xl font-bold font-inconsolata text-secondary-700"
 				>
 					stills
 				</h2>
