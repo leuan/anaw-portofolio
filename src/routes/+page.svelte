@@ -1,8 +1,10 @@
 <script lang="ts">
-	import AboutSection from '$lib/AboutSection.svelte'
+	import AboutSection from '$lib/AboutSection.svelte';
 	import Icon from '@iconify/svelte';
 	import VideographySection from '$lib/VideographySection.svelte';
 	import PaperSection from '$lib/PaperSection.svelte';
+	import Typewriter from 'typewriter-effect/dist/core';
+	import { onMount } from 'svelte';
 
 	const scrollToElement = (href: string) => {
 		const element = document.querySelector(href);
@@ -13,6 +15,21 @@
 			});
 		}
 	};
+
+	let openingLine: HTMLParagraphElement;
+
+	onMount(() => {
+		const typewriter = new Typewriter(openingLine, { loop: true });
+		typewriter
+			.pauseFor(500)
+			.typeString('hi!')
+			.pauseFor(1500)
+			.typeString(" I'm Ana and")
+			.pauseFor(500)
+			.typeString('<br/> this is my portofolio.')
+			.pauseFor(5000)
+			.start();
+	});
 </script>
 
 <svelte:head>
@@ -24,7 +41,7 @@
 	<!-- social links -->
 	<!-- <FilmBackground/> -->
 	<div
-		class="mt-6 flex w-dvw items-center justify-center gap-4 self-end leading-4 text-secondary-800 z-20"
+		class="z-20 mt-6 flex w-dvw items-center justify-center gap-4 self-end leading-4 text-secondary-800"
 	>
 		<a class="transition ease-out hover:text-secondary-950" href="tel:+40730660506">
 			<Icon icon="line-md:phone" width="50" height="50" />
@@ -47,54 +64,58 @@
 	</div>
 
 	<!-- heading -->
-	<div class="glowing flex flex-col items-center justify-center z-20">
+	<div class="glowing z-20 flex flex-col items-center justify-center">
 		<p
+			bind:this={openingLine}
 			class=" p-5 text-center font-playfair text-6xl font-bold text-secondary-700 md:text-8xl"
 		>
 			hi! I'm Ana and
-			<br/>
+			<br />
 			this is my portofolio.
 		</p>
 	</div>
 
 	<!-- scroll down indicator -->
-	<div class="flex animate-pulse flex-col items-center justify-center pb-3 text-secondary-800 z-20">
+	<div class="z-20 flex animate-pulse flex-col items-center justify-center pb-3 text-secondary-800">
 		<p class="m-2 font-playfair text-xs">scroll down...</p>
 		<Icon icon="line-md:arrow-down" width="50" height="50" />
 	</div>
 </section>
 
 <nav
-	class="sticky top-0 flex w-full justify-around gap-5 bg-secondary-700 px-5 py-3 font-playfair text-sm font-semibold text-black md:text-2xl z-10"
+	class="sticky top-0 z-10 flex w-full justify-around gap-5 bg-secondary-700 px-5 py-3 font-playfair text-sm font-semibold text-black md:text-2xl"
 >
-	<button class="hover:text-secondary-900"
+	<button
+		class="hover:text-secondary-900"
 		onclick={() => {
 			scrollToElement('#home');
 		}}>home</button
 	>
-	<button class="hover:text-secondary-900"
+	<button
+		class="hover:text-secondary-900"
 		onclick={() => {
 			scrollToElement('#videography');
 		}}>videography</button
 	>
-	<button class="hover:text-secondary-900"
+	<button
+		class="hover:text-secondary-900"
 		onclick={() => {
 			scrollToElement('#articles');
 		}}>articles</button
 	>
-	<button class="hover:text-secondary-900"
+	<button
+		class="hover:text-secondary-900"
 		onclick={() => {
 			scrollToElement('#about');
 		}}>about me</button
 	>
 </nav>
 
-<VideographySection/>
+<VideographySection />
 
-<PaperSection/>
+<PaperSection />
 
-<AboutSection/>
-
+<AboutSection />
 
 <style lang="postcss">
 	.glowing {
