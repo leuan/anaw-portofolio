@@ -1,4 +1,4 @@
-<section id="about" class="min-h-screen snap-start scroll-m-11 md:scroll-m-14">
+<section id="about" class="snap-start scroll-m-11 md:scroll-m-14">
 	<div class="relative bg-black px-4 pt-4 font-inconsolata text-5xl text-white md:text-8xl">
 		<h1 class="z-10 w-full border-b-4 border-t-8 border-white">ANA-MARIA</h1>
 		<div class="stripes-dark absolute right-4 top-10 hidden h-16 w-80 md:block"></div>
