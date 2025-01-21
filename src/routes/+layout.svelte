@@ -19,6 +19,4 @@
     :global(body) {
         @apply font-playfair text-xl;
     }
-
-    
 </style>

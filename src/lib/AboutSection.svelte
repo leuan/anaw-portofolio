@@ -47,6 +47,10 @@
 </section>
 
 <style lang="postcss">
+    #about {
+        text-color: black !important;
+    }
+    
 	.stripes-dark {
 		background: repeating-linear-gradient(
 			45deg,

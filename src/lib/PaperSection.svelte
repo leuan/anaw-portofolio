@@ -3,7 +3,7 @@
 	import { PaperData } from './data/paperData';
 </script>
 
-<section id="articles" class="snap-start scroll-m-11 bg-white md:scroll-m-14">
+<section id="articles" class="snap-start scroll-m-11 bg-white md:scroll-m-14 text-black">
 	<div class="relative bg-white p-4 font-inconsolata text-5xl text-black md:text-8xl">
 		<h1 class="border-b-8 border-t-8 border-black">ARTICLES</h1>
 		<div class="stripes absolute right-4 top-8 hidden h-20 w-80 md:block"></div>
