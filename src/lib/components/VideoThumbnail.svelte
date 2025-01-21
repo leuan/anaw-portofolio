@@ -26,7 +26,7 @@
 
 <button
 	onclick={() => {
-		goto(`/videos?id=${pageId}`);
+		goto(`/videos/${pageId}`);
 	}}
 	class="slideshow aspect-video w-full md:w-1/2"
 >
@@ -36,9 +36,9 @@
 		<img src={images[currentIndex]} alt={name} class="hover:blur-md" loading="lazy" />
 	{/if}
 	<div
-		class="hover-text flex flex-col items-center justify-around font-playfair text-3xl font-bold text-secondary-700 md:text-5xl lg:text-8xl"
+		class="hover-text flex flex-col items-center justify-around font-playfair font-bold text-secondary-700 text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
 	>
-		<p class="mt-20 text-center drop-shadow-xl">
+		<p class="mt-16 text-center drop-shadow-xl">
 			{name}
 		</p>
 		

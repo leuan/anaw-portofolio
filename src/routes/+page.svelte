@@ -26,7 +26,7 @@
 			.pauseFor(1500)
 			.typeString(" I'm Ana and")
 			.pauseFor(500)
-			.typeString('<br/> this is my portofolio.')
+			.typeString(' this is my portofolio.')
 			.pauseFor(5000)
 			.start();
 	});
@@ -67,11 +67,9 @@
 	<div class="glowing z-20 flex flex-col items-center justify-center">
 		<p
 			bind:this={openingLine}
-			class=" p-5 text-center font-playfair text-6xl font-bold text-secondary-700 md:text-8xl"
+			class=" opening p-5 text-center font-playfair text-6xl font-bold text-secondary-700 md:text-8xl"
 		>
-			hi! I'm Ana and
-			<br />
-			this is my portofolio.
+			hi! I'm Ana and this is my portofolio.
 		</p>
 	</div>
 
@@ -130,5 +128,9 @@
 		50% {
 			text-shadow: 0 0 150px #2f27ce 0 0 30px #000;
 		}
+	}
+
+	.opening {
+		max-width: 15ch;
 	}
 </style>

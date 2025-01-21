@@ -1,4 +1,6 @@
-export const VideoData = [
+import type { VideoInfo } from "$lib/types";
+
+export const VideoData:VideoInfo[] = [
 	{
 		name: 'The Last Luke',
 		synopsis:
