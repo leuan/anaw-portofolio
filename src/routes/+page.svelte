@@ -26,15 +26,15 @@
 			.pauseFor(1500)
 			.typeString(" I'm Ana and")
 			.pauseFor(500)
-			.typeString(' this is my portofolio.')
+			.typeString(' this is my portfolio.')
 			.pauseFor(5000)
 			.start();
 	});
 </script>
 
 <svelte:head>
-	<title>Ana's Portofolio</title>
-	<meta name="description" content="Ana Voicu's Portofolio" />
+	<title>Ana's Portfolio</title>
+	<meta name="description" content="Ana Voicu's Portfolio" />
 </svelte:head>
 
 <section id="home" class="flex h-dvh flex-col justify-between bg-black">
@@ -69,7 +69,7 @@
 			bind:this={openingLine}
 			class=" opening p-5 text-center font-playfair text-6xl font-bold text-secondary-700 md:text-8xl"
 		>
-			hi! I'm Ana and this is my portofolio.
+			hi! I'm Ana and this is my portfolio.
 		</p>
 	</div>
 
