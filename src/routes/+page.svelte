@@ -43,7 +43,7 @@
 	<div
 		class="z-20 mt-6 flex w-dvw items-center justify-center gap-4 self-end leading-4 text-secondary-800"
 	>
-		<a class="transition ease-out hover:text-secondary-950" href="tel:+40730660506">
+		<a class="transition ease-out hover:text-secondary-950" href="tel:+31686265843">
 			<Icon icon="line-md:phone" width="50" height="50" />
 		</a>
 		<a class="transition ease-out hover:text-secondary-950" href="mailto:voicuanamaria@gmail.com">
